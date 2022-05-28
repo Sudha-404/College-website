@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html  lang="en">
+   
+    <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+    <body>
+        <a id="button"><i class="glyphicon glyphicon-chevron-up"></i></a>
+        <!----start of sub header -->
+        <section class="sub_header">
+<nav>
+    <a href="index.html"><img src = "images/logo.jpg" alt="logo picture"></a>
+    <div class="nav_links" id="NavLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+
+       <ul>
+          
+           <li><a href="admission.html">ADMISSIONS</a>
+            <div class="mega_menu">
+                <div class="content">
+                  <div class="Row">
+                    <div class="Col">
+                       
+                        <ul class="mega_links">
+                            <li><a href="admission.html">Admissions</a></li>
+                            <li><a href="undergraduate.html">Undergraduate</a></li>
+                        </ul>
+                    </div>
+                    <div class="Col">
+                      <ul class="mega_links">
+                          <li><a href="#">Graduate   </a></li>
+                          <li><a href="#">Transfer </a></li>
+                      </ul>
+                  </div>
+                  <div class="Col">
+                      <ul class="mega_links">
+                          <li><a href="#">Online</a></li>
+                         
+                      </ul>
+                  </div>
+                  </div>
+                </div>
+
+        </div>
+
+  </li>
+           <li><a href="aboutus.html">ABOUT</a></li>
+           <li><a href="courses.html">COURSE</a></li>
+           <li><a href="blog.html">BLOG</a></li>
+           <li><a href="contactus.html">CONTACT</a></li>
+       </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<h1  style="margin-bottom: 30px;">ABOUT US</h1>
+<div class ="breadcrum">
+    <ul>
+    <li><a href ="index.html"><span>Home</span></a></li>
+    <li><a href ="aboutus.html"><span>About Us</span></a></li>
+   </ul>
+
+</div>
+
+
+        </section>
+<!----end of sub header -->
+
+<!--content-->
+
+<section class="aboutus">
+    <div >
+        <h1>
+           About Us
+        </h1>
+        </div>
+    <div class="Row">
+        <div class="About_Col">
+            <h1>
+                We are Naxal's Land-Grant Universtiy
+            </h1>
+        
+          <p> The University of naxal's role in the state's economic prosperity dates back to our inception. Our research-driven, innovative spirit began in agriculture, engineering and military sciences. We continue this tradition today, making an impact on all areas of industry. From providing a high-quality, accessible education — to leading breakthroughs in clean water, cybersecurity, healthcare, agronomics and fire science — we forge partnerships to improve the lives of all students.</p>
+         <a href="" class="btn_page color_btn">EXPLORE NOW</a>
+    </div>
+        <div class="About_Col">
+            <img src="images/about.jpg" alt="college">
+        </div>
+        </div>
+</section>
+
+
+
+
+<!--footer-->
+
+<section class="Footer"> 
+    <h4 ">
+        ABOUT US
+    </h4>
+
+    <div class ="contact_item"><span> The University of naxal's role in the state's economic prosperity dates back to our inception.Our research-driven, innovative spirit began in agriculture, engineering and military sciences.<br>  We continue this tradition today, making an impact on all areas of industry.<br></span></div>
+<div class="Icons">
+    <i class="fa fa-facebook-square" ></i>
+    <i class="fa fa-twitter-square" ></i>
+    <i class="fa fa-instagram" ></i>
+    <i class="fa fa-linkedin-square" ></i>
+</div>
+
+<div class="title">
+    <h2> Have a Question</h2>
+    </div>
+    <div class ="contact_item">
+       <span>
+    <i class="fa fa-map-marker"></i>
+    Naxal,Kathmandu</span>
+    </div>
+        <div class ="contact_item">
+            <span>
+    <i class="fa fa-phone"></i>
+    +46345545536</span>
+    </div>
+    <div class ="contact_item">
+    <span>
+        <i class="fa fa-envelope"></i>
+        info@domain.com
+    </span>
+    
+    
+    </div>
+    <div class ="contact_item">
+        <span>
+            &copy; Copyright 2021 University of Naxal All Rights Reserved.
+        </span>
+        
+        
+        </div>
+        
+    
+    
+    <div class="Link">
+      
+        <a href = "#">COPYRIGHT</a>
+        <a href = "#">PRIVACY POLICY</a>
+        <a href = "help.html">GET HELP</a>
+        <a href = "#">DISCLAIMER</a>
+        <a href="access_about.html">ACCESSIBILITY</a>
+        </div>
+    
+    
+    
+    
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-----------javascript for menu--------->
+<script>
+    var NavLinks =document.getElementById("NavLinks");
+    function showMenu(){
+        NavLinks.style.right="0";
+
+    }
+
+    function hideMenu(){
+        NavLinks.style.right="-200px";
+    }
+
+
+    var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+<!-----------end of javascript for menu--------->
+
+    </body>
+</html>
